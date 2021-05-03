@@ -1,0 +1,23 @@
+2021-02-05T17:26:10.356261Z        14 Connect   admin@192.168.2.41 on crisalide using TCP/IP
+2021-02-05T17:26:10.356817Z        15 Connect   admin@192.168.2.40 on crisalide using TCP/IP
+2021-02-05T17:26:10.366663Z        14 Query     /* mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e ) */SELECT  @@session.auto_increment_increment AS auto_increment_increment, @@character_set_client AS character_set_client, @@character_set_connection AS character_set_connection, @@character_set_results AS character_set_results, @@character_set_server AS character_set_server, @@collation_server AS collation_server, @@init_connect AS init_connect, @@interactive_timeout AS interactive_timeout, @@license AS license, @@lower_case_table_names AS lower_case_table_names, @@max_allowed_packet AS max_allowed_packet, @@net_buffer_length AS net_buffer_length, @@net_write_timeout AS net_write_timeout, @@sql_mode AS sql_mode, @@system_time_zone AS system_time_zone, @@time_zone AS time_zone, @@transaction_isolation AS transaction_isolation, @@wait_timeout AS wait_timeout
+2021-02-05T17:26:10.367078Z        15 Query     /* mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e ) */SELECT  @@session.auto_increment_increment AS auto_increment_increment, @@character_set_client AS character_set_client, @@character_set_connection AS character_set_connection, @@character_set_results AS character_set_results, @@character_set_server AS character_set_server, @@collation_server AS collation_server, @@init_connect AS init_connect, @@interactive_timeout AS interactive_timeout, @@license AS license, @@lower_case_table_names AS lower_case_table_names, @@max_allowed_packet AS max_allowed_packet, @@net_buffer_length AS net_buffer_length, @@net_write_timeout AS net_write_timeout, @@sql_mode AS sql_mode, @@system_time_zone AS system_time_zone, @@time_zone AS time_zone, @@transaction_isolation AS transaction_isolation, @@wait_timeout AS wait_timeout
+2021-02-05T17:26:10.371966Z        15 Query     SET NAMES utf8
+2021-02-05T17:26:10.372159Z        14 Query     SET NAMES utf8
+2021-02-05T17:26:10.377317Z        14 Query     SET character_set_results = NULL
+2021-02-05T17:26:10.377462Z        15 Query     SET character_set_results = NULL
+2021-02-05T17:26:10.381236Z        15 Query     SET autocommit=1
+2021-02-05T17:26:10.381348Z        14 Query     SET autocommit=1
+2021-02-05T17:26:10.384229Z        14 Query     SET autocommit=1
+2021-02-05T17:26:10.384354Z        15 Query     SET autocommit=1
+2021-02-05T17:26:10.388253Z        15 Query     SET SESSION TRANSACTION ISOLATION LEVEL REPEATABLE READ
+2021-02-05T17:26:10.388380Z        14 Query     SET SESSION TRANSACTION ISOLATION LEVEL REPEATABLE READ
+2021-02-05T17:26:10.392207Z        15 Query     USE `crisalide`
+2021-02-05T17:26:10.392431Z        14 Query     USE `crisalide`
+2021-02-05T17:26:10.396308Z        14 Query     set session transaction read write
+2021-02-05T17:26:10.396518Z        15 Query     set session transaction read write
+2021-02-05T17:26:10.401176Z        14 Query     select ora_sca,id,min15,min5,min2 from agende where id_utente=80 and promemoria=true and data_sca='2021-02-05' and (min15=0 or min5=0 or min2=0)
+2021-02-05T17:26:10.403314Z        15 Query     select ora_sca,id,min15,min5,min2 from agende where id_utente=124 and promemoria=true and data_sca='2021-02-05' and (min15=0 or min5=0 or min2=0)
+2021-02-05T17:26:10.408560Z        15 Query     select * from news join a_utenti on news.id_utente = a_utenti.id order by data_gen desc,ora_gen desc
+2021-02-05T17:26:15.419503Z        14 Query     select count(id) from posta where id_destinatario=80
+2021-02-05T17:26:15.421090Z        12 Query     select count(id) from posta where id_destinatario=144
